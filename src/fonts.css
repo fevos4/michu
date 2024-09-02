@@ -1,0 +1,19 @@
+@font-face {
+    font-family: 'Bolder';
+    src: url('../public/fonts/FUTURA75BOLD.TTF');
+}
+
+@font-face {
+    font-family: 'Medium';
+    src: url('../public/fonts/FUTURA65MEDIUM.TTF');
+}
+
+@font-face {
+    font-family: 'Regular';
+    src: url('../public/fonts/FUTURA55REGULAR.TTF');
+}
+
+@font-face {
+    font-family: 'Lightt';
+    src: url('../public/fonts/FUTURA45LIGHT.TTF');
+}
