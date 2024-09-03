@@ -20,7 +20,7 @@ const Privacy = () =>{
      <h2 className="text-3xl mb-2 font-boldi ">1. Introduction</h2>
        
        <p className="lg:text-lg mb-8 font-lighti text-sm">
-       Welcome to Endode, a laundry application developed by [Your Company Name]. We are committed to protecting your privacy and ensuring the security of your personal information. This Privacy Policy outlines how we collect, use, disclose, and safeguard your information when you use our application.
+       Welcome to Endode, a laundry application developed by MichuTech. We are committed to protecting your privacy and ensuring the security of your personal information. This Privacy Policy outlines how we collect, use, disclose, and safeguard your information when you use our application.
        </p>
 
        <h2 className="text-3xl mb-2 font-boldi ">2. Information We Collect</h2>
