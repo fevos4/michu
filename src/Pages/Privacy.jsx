@@ -11,7 +11,7 @@ const Privacy = () =>{
             <div className="bg-white  p-10 lg:p-8 w-full justify-between ">
      
      <header className=" text-center ">
-       <h1 className="text-2xl lg:text-4xl font-bold text-[#00A551]">Privacy Policy for Endode Laundry Application</h1>
+       <h1 className="text-2xl lg:text-4xl font-boldi text-[#00A551]">Privacy Policy for Endode Laundry Application</h1>
        <h1>Effective Date: [September 3, 2024]</h1>
      </header>
 

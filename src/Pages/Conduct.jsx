@@ -12,7 +12,7 @@ const Conduct = () =>{
               <div className="bg-white  p-10 lg:p-8 w-full justify-between ">
      
      <header className=" text-center ">
-       <h1 className="text-2xl lg:text-4xl font-bold text-[#00A551]">Code of Conduct</h1>
+       <h1 className="text-2xl lg:text-4xl font-boldi text-[#00A551]">Code of Conduct</h1>
        
      </header>
 
