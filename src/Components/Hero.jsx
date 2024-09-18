@@ -15,7 +15,7 @@ const Hero = () => {
 
   return (
     <div 
-      className="w-full h-screen flex flex-col justify-between pt-28 px-4 md:px-24"
+      className="w-full md:h-screen flex flex-col justify-between pt-28 px-4 md:px-24"
       style={{ 
         backgroundImage: `url('/assets/herro.png')`, 
         backgroundSize: 'cover',
