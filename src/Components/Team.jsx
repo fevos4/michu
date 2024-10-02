@@ -13,7 +13,7 @@ const teamMembers = [
     },
     {
         name: 'Gemechis Sheleme',
-        role: 'Chief Financial and HR Officer (CFO)',
+        role: 'CMO',
         image: '/assets/gemechis.jpg', 
         social: {
             facebook: '#',
@@ -33,7 +33,7 @@ const teamMembers = [
     },
     {
         name: 'Nabiyat Lemma',
-        role: 'Chief Marketing and Promotion Officer',
+        role: 'Promotion Officer',
         image: '/assets/nebiyat.jpg', 
         social: {
             facebook: '#',

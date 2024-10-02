@@ -30,6 +30,11 @@ const cards = [
     title1: 'Consultancy',
     description1: 'Providing expert advice and solutions to optimize your technology strategy.',
     imgSrc1: '/assets/cons2.png',
+  },
+  {
+    title1: 'Branding and Social Media management',
+    description1: 'Logo design, Content creation, Social Media Management, Branding and promotion',
+    imgSrc1: '/assets/social.webp',
   }
 ];
 
@@ -72,7 +77,7 @@ const ServicesSection = () => {
         ))}
       </div>
 
-      <div className="hidden md:grid grid-cols-1 md:grid-cols-2 gap-8 mx-auto max-w-2xl mt-12">
+      <div className="hidden md:grid grid-cols-1 md:grid-cols-3 gap-8 mx-auto max-w-5xl mt-12">
         {cards.map((card, index) => (
           <div
             key={index}

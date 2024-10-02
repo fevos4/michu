@@ -47,7 +47,7 @@ const Hero = () => {
         {/* Right Section: Image */}
         <div className="flex justify-center md:justify-end">
           <img 
-            src="/assets/hero.png" 
+            src="/assets/hero1.png" 
             alt="Hero Visual" 
             className='h-56 sm:h-72 md:h-96 object-contain'
           />

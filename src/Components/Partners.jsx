@@ -29,7 +29,7 @@ const Partners = () => {
       <p className="text-center text-3xl font-bold mb-10">Our Partners</p>
 
       {/* Marquee Movement for Both Desktop and Mobile */}
-      <div className="marquee-container bg-slate-200  h-32 flex items-center">
+      <div className="marquee-container bg-slate-400  h-32 flex items-center">
         <div className="marquee-content">
           {cards.map((card, index) => (
             <div key={index} className="partner-item text-center mx-6">
