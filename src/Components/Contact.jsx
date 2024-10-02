@@ -32,39 +32,48 @@ const Contact = () => {
               <img src="/assets/logo.png" alt="logo" className='w-32' />
             </div>
             
-            <p className="text-gray-400 mb-4 font-boldi">
-              michutechitsolutionsplc@gmail.com
-            </p>
+           
             <div className="flex flex-col space-y-3 mb-6">
-              <div className="flex items-center text-gray-400 font-boldi">
+              <div className="flex items-center text-white font-boldi">
                 <IoIosMail className="text-[#0000FF] mr-4 h-5 w-5" />
-                <p>(+251) 98-616-4444 / (+251) 98-626-4444</p>
+                <a href="#"  className="hover:text-[#00A551]">michutechitsolutionsplc@gmail.com</a>
               </div>
-              <div className="flex items-center text-gray-400 font-boldi">
+              <div className="flex items-center text-white font-boldi">
                 <FaPhone className="text-[#0000FF] mr-4 h-5 w-5" />
-                <p>Phone</p>
+                <p  className="hover:text-[#00A551]">(+251) 98-616-4444 / (+251) 98-626-4444</p>
               </div>
-              <div className="flex items-center text-gray-400 font-boldi">
+              <div className="flex items-center text-white font-boldi">
                 <FaLinkedin className="text-[#0000FF] mr-4 h-5 w-5" />
-                <p>LinkedIn</p>
+                <a
+            href="https://www.linkedin.com/company/michutech-it-solutions"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="hover:text-[#00A551]"
+          >LinkedIn</a>
+                
               </div>
-              <div className="flex items-center text-gray-400 font-bold">
+              <div className="flex items-center text-white font-bold">
                 <FaGithub className="text-[#0000FF] mr-4 h-5 w-5" />
-                <p>GitHub</p>
+                <a
+            href="#"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="hover:text-[#00A551]"
+          >Github</a>
               </div>
             </div>
             <div className="flex space-x-4 mb-4">
-              <button className="bg-[#110D21] text-white py-2 px-4 rounded-lg flex items-center font-bold">
-                <FaApple className="h-5 w-5 mr-2" /> App Store
+              <button className="bg-[#110D21] text-white py-2 px-4 rounded-lg flex items-center font-bold hover:text-[#00A551]">
+                <FaApple className="h-5 w-5 mr-2 " /> App Store
               </button>
-              <button className="bg-[#110D21] text-white py-2 px-4 rounded-lg flex items-center font-bold">
+              <button className="bg-[#110D21] text-white py-2 px-4 rounded-lg flex items-center font-bold hover:text-[#00A551]">
                 <FaGooglePlay className="h-5 w-5 mr-2" /> Google Play
               </button>
             </div>
-            <p className="text-gray-400 mt-4 font-boldi hover:text-[#0000FF]" onClick={handlePrivacyClick} style={{ cursor: 'pointer' }}>
+            <p className="text-white mt-4 font-boldi hover:text-[#00A551]" onClick={handlePrivacyClick} style={{ cursor: 'pointer' }}>
               Privacy Policy
             </p>
-            <p className="text-gray-400 mt-4 font-boldi hover:text-[#0000FF]" onClick={handleConductClick} style={{ cursor: 'pointer' }}>
+            <p className="text-white mt-4 font-boldi hover:text-[#00A551]" onClick={handleConductClick} style={{ cursor: 'pointer' }}>
               Code of Conduct
             </p>
           </div>
@@ -91,7 +100,7 @@ const Contact = () => {
                   className="w-full p-2 rounded-lg bg-[#110D21] text-white border border-gray-700 focus:outline-none"
                 ></textarea>
               </div>
-              <button className="w-full py-2 px-4 rounded-lg bg-blue-600 text-white hover:bg-blue-700 font-bold">
+              <button className="w-full py-2 px-4 rounded-lg bg-blue-600 text-white hover:bg-[#00A551] font-bold">
                 Send
               </button>
             </form>

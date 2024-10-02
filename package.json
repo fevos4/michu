@@ -1,6 +1,7 @@
 {
   "name": "michuwebsite",
   "version": "0.1.0",
+  "homepage": "https://washlinnk.com/",
   "private": true,
   "dependencies": {
     "@fortawesome/fontawesome-free": "^6.6.0",

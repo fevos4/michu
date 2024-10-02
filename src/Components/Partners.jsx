@@ -1,101 +1,86 @@
-import React, { useState } from "react";
-import { useSwipeable } from "react-swipeable";
+import React from "react";
 
 const cards = [
   {
-    image: "/assets/arki.png",
+    image: "/assets/arkki.png",
     name: "Arki",
   },
   {
-    image: "/assets/wings.png",
+    image: "/assets/wingg.png",
     name: "Wings Education and Media",
   },
   {
-    image: "/assets/wash.png",
+    image: "/assets/washh.png",
     name: "Washlink",
   },
   {
-    image: "/assets/veh.png",
+    image: "/assets/yerr.png",
     name: "YER Tech",
   },
   {
-    image: "/assets/endode.png",
-    name: "YER Tech",
+    image: "/assets/endo.png",
+    name: "Endode",
   },
 ];
 
 const Partners = () => {
-  const [currentIndex, setCurrentIndex] = useState(0);
-
-  const handlers = useSwipeable({
-    onSwipedLeft: () => handleNext(),
-    onSwipedRight: () => handlePrev(),
-    preventDefaultTouchmoveEvent: true,
-    trackMouse: true,
-  });
-
-  const handleNext = () => {
-    setCurrentIndex((prevIndex) => (prevIndex + 1) % cards.length);
-  };
-
-  const handlePrev = () => {
-    setCurrentIndex((prevIndex) => (prevIndex - 1 + cards.length) % cards.length);
-  };
-
   return (
-    <div id="partners" className="w-full">
-      <p className="text-center text-3xl font-boldi mb-20 md:px-24">
-        Our Partners
-      </p>
+    <div id="partners" className="w-full overflow-hidden py-10">
+      <p className="text-center text-3xl font-bold mb-10">Our Partners</p>
 
-      {/* Grid for Desktop */}
-      <div className="hidden md:flex justify-between space-x-6 px-20 mb-10">
-        {cards.map((card, index) => (
-          <div key={index} className="text-center mb-20 font-medi">
-            <img
-              src={card.image}
-              alt={card.name}
-              className="mx-auto mb-2 h-16 w-20 rounded-lg"
-            />
-            <p>{card.name}</p>
-          </div>
-        ))}
-      </div>
-
-      {/* Swipeable Section for Mobile */}
-      <div {...handlers} className="md:hidden relative mx-auto max-w-full overflow-hidden px-4">
-        <div className="flex transition-transform duration-500" style={{ transform: `translateX(-${currentIndex * 100}%)` }}>
+      {/* Marquee Movement for Both Desktop and Mobile */}
+      <div className="marquee-container bg-slate-200  h-32 flex items-center">
+        <div className="marquee-content">
           {cards.map((card, index) => (
-            <div
-              key={index}
-              className={`min-w-full p-4 transition-transform duration-500 transform-gpu`}
-            >
-              <div className="text-center mb-20 font-medi">
-                <img
-                  src={card.image}
-                  alt={card.name}
-                  className="mx-auto mb-2 h-16 w-20 rounded-lg"
-                />
-                <p>{card.name}</p>
-              </div>
+            <div key={index} className="partner-item text-center mx-6">
+              <img
+                src={card.image}
+                alt={card.name}
+                className="mx-auto mb-2 h-36 w-32 rounded-lg "
+              />
+             
+            </div>
+          ))}
+          {/* Repeat the list to create infinite scrolling effect */}
+          {cards.map((card, index) => (
+            <div key={index + cards.length} className="partner-item text-center mx-6">
+              <img
+                src={card.image}
+                alt={card.name}
+                className="mx-auto mb-2 h-36 w-32 rounded-lg"
+              />
+              
             </div>
           ))}
         </div>
-
-        {/* Arrows for Swiping */}
-        <button
-          onClick={handlePrev}
-          className="absolute left-6 top-1/2 transform -translate-y-1/2 bg-[#00A551] text-white p-2 rounded-full focus:outline-none"
-        >
-          &#10094;
-        </button>
-        <button
-          onClick={handleNext}
-          className="absolute right-6 top-1/2 transform -translate-y-1/2 bg-[#00A551] text-white p-2 rounded-full focus:outline-none"
-        >
-          &#10095;
-        </button>
       </div>
+
+      {/* Custom CSS for marquee animation */}
+      <style jsx>{`
+        .marquee-container {
+          width: 100%;
+          overflow: hidden;
+        }
+
+        .marquee-content {
+          display: flex;
+          animation: marquee 15s linear infinite;
+        }
+
+        .partner-item {
+          flex-shrink: 0;
+          width: 200px;
+        }
+
+        @keyframes marquee {
+          from {
+            transform: translateX(0%);
+          }
+          to {
+            transform: translateX(-50%);
+          }
+        }
+      `}</style>
     </div>
   );
 };

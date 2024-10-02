@@ -1,5 +1,6 @@
 import React from 'react';
 import { useSwipeable } from 'react-swipeable';
+import { IoIosArrowDropleft, IoIosArrowDropright } from 'react-icons/io';
 
 const services = [
   {
@@ -65,7 +66,7 @@ const ServicesSection = () => {
             className="bg-white shadow-lg rounded-3xl p-6 flex flex-col items-center text-center transform transition-transform duration-300 hover:scale-105 hover:shadow-xl"
           >
             <h3 className="text-xl font-boldi mb-2">{service.title}</h3>
-            <p className="text-gray-600 text-xs font-lighti">{service.description}</p>
+            <p className="text-gray-600  font-lighti">{service.description}</p>
             <img src={service.imgSrc} alt={service.title} className="h-40 mb-4" />
           </div>
         ))}
@@ -78,7 +79,7 @@ const ServicesSection = () => {
             className="bg-white shadow-lg rounded-3xl p-6 flex flex-col items-center text-center transform transition-transform duration-300 hover:scale-105 hover:shadow-xl"
           >
             <h3 className="text-xl font-boldi mb-2">{card.title1}</h3>
-            <p className="text-gray-600 text-xs font-lighti">{card.description1}</p>
+            <p className="text-gray-600  font-lighti">{card.description1}</p>
             <img src={card.imgSrc1} alt={card.title1} className="h-40 mb-4" />
           </div>
         ))}
@@ -106,13 +107,13 @@ const ServicesSection = () => {
           onClick={handlePrev}
           className="absolute left-1 top-1/2 transform -translate-y-1/2 bg-[#00A551] text-white p-2 rounded-full focus:outline-none"
         >
-          &#10094;
+          <IoIosArrowDropleft className="w-6 h-6" />
         </button>
         <button
           onClick={handleNext}
           className="absolute right-1 top-1/2 transform -translate-y-1/2 bg-[#00A551] text-white p-2 rounded-full focus:outline-none"
         >
-          &#10095;
+          <IoIosArrowDropright className="w-6 h-6" />
         </button>
       </div>
     </section>

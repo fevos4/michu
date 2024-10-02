@@ -26,32 +26,32 @@ const Navbar = () => {
           }`}
         >
           <li className={`p-4 cursor-pointer text-sm font-boldi ${click ? 'block' : 'hidden lg:block'}`}>
-            <a className="text-black hover:text-indigo-700" onClick={() => scrollToSection('home')}>
+            <a className="text-black hover:text-[#00A551]" onClick={() => scrollToSection('home')}>
               Home
             </a>
           </li>
           <li className={`p-4 cursor-pointer text-sm font-boldi ${click ? 'block' : 'hidden lg:block'}`}>
-            <a className="text-black hover:text-indigo-700" onClick={() => scrollToSection('services')}>
+            <a className="text-black hover:text-[#00A551]" onClick={() => scrollToSection('services')}>
               Services
             </a>
           </li>
           <li className={`p-4 cursor-pointer text-sm font-boldi ${click ? 'block' : 'hidden lg:block'}`}>
-            <a className="text-black hover:text-indigo-700" onClick={() => scrollToSection('projects')}>
+            <a className="text-black hover:text-[#00A551]" onClick={() => scrollToSection('projects')}>
               Projects
             </a>
           </li>
           <li className={`p-4 cursor-pointer text-sm font-boldi ${click ? 'block' : 'hidden lg:block'}`}>
-            <a className="text-black hover:text-indigo-700" onClick={() => scrollToSection('about')}>
+            <a className="text-black hover:text-[#00A551]" onClick={() => scrollToSection('about')}>
               About Us
             </a>
           </li>
           <li className={`p-4 cursor-pointer text-sm font-boldi ${click ? 'block' : 'hidden lg:block'}`}>
-            <a className="text-black hover:text-indigo-700" onClick={() => scrollToSection('team')}>
+            <a className="text-black hover:text-[#00A551]" onClick={() => scrollToSection('team')}>
               Team
             </a>
           </li>
           <li className={`p-4 cursor-pointer text-sm font-boldi ${click ? 'block' : 'hidden lg:block'}`}>
-            <a className="text-black hover:text-indigo-700" onClick={() => scrollToSection('contact')}>
+            <a className="text-black hover:text-[#00A551]" onClick={() => scrollToSection('contact')}>
               Contact Us
             </a>
           </li>

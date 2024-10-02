@@ -15,28 +15,29 @@ const Hero = () => {
 
   return (
     <div 
-      className="w-full h-screen flex flex-col justify-between pt-20 px-4 md:px-24"
+      className="w-full flex items-center justify-center pt-16 px-4 md:px-24"
       style={{ 
         backgroundImage: `url('/assets/herro.png')`, 
         backgroundSize: 'cover',
         backgroundPosition: 'center',
-        backgroundRepeat: 'no-repeat' 
+        backgroundRepeat: 'no-repeat',
+        minHeight:'600px', // Ensures the background covers full viewport height
       }}
       id="home"
     >
-      <div className="grid md:grid-cols-2 gap-8">
+      <div className="grid md:grid-cols-2 gap-8 max-w-7xl mx-auto">
         {/* Left Section: Text */}
-        <div className='flex flex-col justify-center md:items-start w-full px-2 py-8'>
-          <p className='text-3xl md:text-5xl font-bold text-center md:text-left'>
+        <div className='flex flex-col justify-center items-center md:items-start w-full px-2 py-6 sm:py-8'>
+          <p className='text-2xl sm:text-4xl md:text-5xl font-bold text-center md:text-left'>
             Transforming Ideas into <span className="text-[#00A551]">Digital Solutions</span>
           </p>
-          <p className='py-3 md:mb-5 text-sm md:text-base font-light text-center md:text-left'>
+          <p className='py-2 sm:py-3 text-xs sm:text-sm md:text-base font-light text-center md:text-left'>
             We are a technology company dedicated to creating innovative solutions that empower businesses.
           </p>
-          <div className="flex justify-center md:justify-start">
+          <div className="flex justify-center md:justify-start mt-4">
             <button 
               onClick={() => scrollToSection("services")}  
-              className="hover:bg-slate-400 rounded-md bg-[#0000FE] px-4 py-2 text-white font-bold"
+              className="hover:bg-[#00A551] rounded-md bg-[#0000FE] px-6 sm:px-8 py-2 text-white font-bold"
             >
               Explore More
             </button>
@@ -48,7 +49,7 @@ const Hero = () => {
           <img 
             src="/assets/hero.png" 
             alt="Hero Visual" 
-            className='md:h-96 h-72 md:ml-20 object-contain'
+            className='h-56 sm:h-72 md:h-96 object-contain'
           />
         </div>
       </div>
